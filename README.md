@@ -13,7 +13,3 @@ We welcome contributions from anyone interested in sharing their knowledge and e
 3. Make your changes
 4. Commit your changes and push them to your fork
 5. Submit a pull request
-
-## License
-
-Code-Snakes is licensed under the [MIT License](LICENSE).
