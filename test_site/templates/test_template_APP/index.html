@@ -1,0 +1,58 @@
+<!-- { - % extends "base.html" % - } 
+    (with quotes) uses the literal value "base.html" as the name of the parent template to extend. -->
+
+<!-- truncatewords¶ truncates a string after a certain number of words. 
+        Argument: Number of words to truncate after   {-{  value|truncatewords:2  }-} 
+        If value is "Joel is a slug", the output will be "Joel is …". -->
+
+<!-- Djnago template tag link - https://docs.djangoproject.com/en/4.2/ref/templates/builtins/  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    {{test}} <!-- It use to take the input from the pyhton file and sjoe in html page -->
+    <table>
+        <tr>
+            <th>SR.NO</th>
+            <th>value</th>
+        </tr>
+        
+            {% for test in test %} <!-- start the forloop -->
+            <tr>
+            <td>
+                {{forloop.counter}} <!-- Autocounter in  jinja -->
+            </td>
+            <td>
+                {{test}} <!-- take all value of test one by one -->
+            </td>
+        </tr>
+            {% endfor %}  <!-- end the forloop  -->
+        
+
+        {% if test.d == 18 %} <!-- if-else conditios-->
+
+        {% elif % }
+
+        {% else %}
+
+        {% endif %}
+    </table>
+    
+
+    <h2>This is the index.html file  call from the html folder</h2>
+    
+</body>
+</html>
+
+
+
+
+
